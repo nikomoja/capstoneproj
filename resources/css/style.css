@@ -1,0 +1,538 @@
+html,
+body {
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+  line-height: 1.2rem;
+}
+
+/* Generic */
+
+p {
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+  text-align: center;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.title {
+    margin: 2rem auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    background-color: #ff8000;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    margin: 0 0.75rem; /* maintains 24px margin (1.5*16=24)between logo and left end*/
+    color: #c73c1e;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.logo-txt {
+  border: 1px solid black;
+  padding: 0.1rem;
+  flex: 1 1 auto;
+}
+
+/* set 'Colman' logo text to bold */
+.logo-txt span {
+  font-weight: bold;
+}
+
+.logo-txt p {
+  font-size: 1.5rem;
+}
+
+/* Menu */
+
+.menu {
+    width: 100%;
+    border: 3px solid green;
+}
+
+.navigation-large {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 3px solid red;
+    flex-wrap: wrap;
+}
+
+.navigation-large li {
+    flex: auto;
+    line-height: 1.2rem;
+    margin: 0 1.5rem; /* maintains 24px margin right end*/
+    text-align: end;
+}
+
+.navigation-large a {
+    text-decoration: none;
+    color: #1c2120;
+}
+
+.navigation-small {
+        display: none;
+    }
+
+/* Banner Section */
+
+.banner {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    background-color: #ce8d68;
+    padding-top: 4rem; /* to remain visible with fixed position header */
+}
+
+/* column1 nb same column structure repeated under orientation, learning and thesis. Minor tweaks */
+
+.banner .column1 {
+    border: 2px solid red;
+    flex-direction: column;
+    width: 60%;
+    flex: auto;
+    margin: 2rem 0rem 2rem 1.5rem;
+}
+
+.image-flex {
+  border: 2px solid green;
+}
+
+.image-flex img  {
+    width: 100%;
+    /* min-width: 250px; to prevent image shrinking disproportionately */
+    height: auto;
+    display: block;
+}
+
+/* Banner column2 */
+
+.banner .column2 {
+    border: 2px solid red;
+    flex-direction: column;
+    margin: 2rem 1.5rem;
+    width: 40%;
+    justify-content: center;
+    flex: auto;
+
+}
+
+.text {
+    border: 2px solid red;
+    margin: 2rem auto;
+}
+
+.text h1, h3 {
+    margin: 1rem auto;
+}
+
+.start-button {
+    display: flex;
+    justify-content: center;
+    flex-grow: 5;
+    border: 2px solid red;
+    color: snow;
+    font-size: 1.5rem;
+    line-height: normal;
+    background-color: #bf3c20;
+    opacity: 0.5;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    margin: 2rem auto;
+    width: 40%;
+}
+
+.text a {
+  text-decoration: none;
+}
+
+/* Orientation Section */
+
+.orientation .sidebar-mobile {
+    display: none;
+}
+
+.orientation {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Column 1 - Same style above banner section column1: */
+
+.orientation .column1 {
+    flex-direction: column;
+    width: 60%;
+    flex: auto;
+    margin: 2rem 1.5rem;
+}
+
+/* image flex same style banner */
+
+.image-flex {
+    border: 2px solid red;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* text class same style banner */
+
+.text {
+    border: 2px solid red;
+    margin: 2rem auto;
+}
+
+.text h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.emanuel {
+    margin-bottom: 2rem;
+}
+
+/* specify to avoid styling button, also span */
+
+.orientation .text span {
+    font-style: italic;
+}
+
+/* Orientation Column 2 */
+
+.orientation .column2 {
+    border: 2px solid green;
+    flex-direction: column;
+    margin: 2rem 1.5rem;
+    width: 40%;
+    justify-content: center;
+    flex: auto;
+
+}
+
+/* Sidebar */
+
+.sidebar:last-child {
+    background-color: #ff9f63;
+}
+
+.sidebar {
+    display: inline-flex;
+    border: 2px solid red;
+    padding-bottom: 1rem;
+    align-content: center;
+}
+
+.sidebar-image {
+    border: 2px solid blue;
+    max-width: 35%;
+    height: auto;
+    margin: 1rem;
+}
+
+.sidebar-image img {
+    max-width: 100%;
+    min-width: 100px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.sidebar-info {
+  width: 65%;
+  overflow: hidden;
+}
+
+.sidebar p {
+  padding-bottom: 1rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #c54700;
+}
+
+/* Learning Section */
+
+.courses-mobile {
+  display: none;
+}
+
+.courses {
+    background-color: #0ca6c8;
+    border: 2px solid red;
+}
+
+.courses-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0 2rem 3rem 2rem;
+}
+
+.courses .column1,
+.courses .column2,
+.courses .column3 {
+    border: 2px solid black;
+    flex-direction: column;
+    align-content: space-between;
+    flex: auto;
+    align-items: center;
+    max-width: 350px;
+    maz-height: 700px;
+    }
+
+.course-option {
+    align-content: center;
+    justify-content: space-between;
+    border: 2px solid #ed27c6;
+    background-color: #ffffff;
+    width: auto;
+    height: 40%;
+    overflow: scroll;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Can't figure out how to solve margin-top/bottom discrepancy when columns wrap */
+
+.image-container img {
+  display: block;
+  max-width: 100%; /* this seems to be the only way I can get the img to resize to it's parent container. Is there no way to do this from the parent? */
+}
+
+.course-option h3 {
+  text-align: center;
+  font-weight: 900;
+}
+
+.course-option p {
+    margin: 0.5rem 1rem;
+}
+
+/* Thesis Section */
+
+
+.thesis {
+    border: 2px solid blue;
+    justify-content: center;
+    align-items: center;
+    background-color: snow;
+}
+
+.thesis-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.thesis-flex .column1 {
+    border: 2px solid red;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 1.5rem;
+}
+
+.thesis-flex .column2 {
+    border: 2px solid blue;
+    flex-direction: column;
+    width: 40%;
+}
+
+ /* Footer */
+
+ footer {
+    display: flex;
+    margin: auto;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2rem;
+    border-top: 1px solid #c54700;
+}
+
+
+footer span, a {
+    color: silver;
+    text-decoration: none;
+}
+
+/* Responsive media queries */
+
+@media only screen and (max-width: 550px) {
+
+  /* Menu: white, use logo icons */
+
+  .navigation-large {
+  display: none;
+  }
+
+  header {
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navigation-small {
+  display: flex;
+  justify-content:space-around;
+  flex: auto;
+  height: 100%;
+  border: 2px solid red;
+  }
+
+
+  .logo-img  {
+  margin: auto 0.5rem;
+  border: 1px solid blue;
+  }
+
+  .logo-img a img {
+  height: 2.5rem;
+  }
+
+/* Banner */
+
+  .banner {
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .banner .column1 {
+  width: 100%;
+  height: auto;
+  margin: 0rem auto;
+  }
+
+  .banner .column2 {
+  width: auto;
+  margin: 0rem auto;
+  padding: 0rem 2rem;
+  }
+
+  .text h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .text h3 {
+    font-size: 1rem;
+  }
+
+/* Orientation */
+
+  .orientation .column1,
+  .sidebar-image {
+    display: none;
+  }
+
+  .orientation .column2 {
+  margin: 0rem;
+  }
+
+  .sidebar {
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+  }
+
+  .sidebar .sidebar-mobile {
+  display: block;
+  width: auto;
+  height: 100%;
+  }
+
+  .sidebar img {
+  width: 100%;
+  }
+
+  .sidebar-info {
+  width: 90%;
+  margin: auto 1.778rem;
+  }
+
+/* Learning Section */
+
+    .courses-flex {
+    display: none;
+    }
+
+    .courses-mobile {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    }
+
+    .course-option {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    align-items: center;
+    width: 75%;
+    height: 3rem;
+    margin: 1rem auto;
+    background-color: silver;
+    border-radius: 0.6rem;
+    }
+
+    .course-option h3 {
+      color: black;
+    }
+
+/* Thesis Section & Footer */
+
+    .thesis h3, p, .column2, .links{
+    display: none;
+    }
+
+    .thesis .column1 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    }
+
+    .thesis video {
+    width: 100%;
+    }
+
+/* Footer */
+
+
+
+}
