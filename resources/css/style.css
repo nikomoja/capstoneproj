@@ -9,15 +9,20 @@ body {
 
 p {
     font-size: 0.8rem;
+    color: #01101B;
 }
 
 h1 {
+    color: #01101B;
     font-size: 3rem;
     font-weight: 700;
     line-height: 1;
+
+
 }
 
 h2 {
+  color: #01101B;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.2rem;
@@ -25,6 +30,7 @@ h2 {
 }
 
 h3 {
+    color: #01101B;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -32,14 +38,13 @@ h3 {
 .title {
     margin: 2rem auto;
     text-align: center;
-    border: 2px solid black;
 }
 
 /* Header */
 
 header {
     display: flex;
-    background-color: #ff8000;
+    background-color: #1C6EA8;
     height: 4rem;
     width: 100%;
     position: fixed;
@@ -51,12 +56,10 @@ header {
     display: flex;
     margin: 0 0.75rem; /* maintains 24px margin (1.5*16=24)between logo and left end*/
     color: #c73c1e;
-    border: 1px solid black;
     align-items: center;
 }
 
 .logo-txt {
-  border: 1px solid black;
   padding: 0.1rem;
   flex: 1 1 auto;
 }
@@ -74,14 +77,12 @@ header {
 
 .menu {
     width: 100%;
-    border: 3px solid green;
 }
 
 .navigation-large {
     display: flex;
     width: 100%;
     height: auto;
-    border: 3px solid red;
     flex-wrap: wrap;
 }
 
@@ -94,7 +95,12 @@ header {
 
 .navigation-large a {
     text-decoration: none;
-    color: #1c2120;
+    color: #F8FCFF;
+}
+
+.navigation-large a:hover {
+  font-weight: bold;
+  color: #010F19;
 }
 
 .navigation-small {
@@ -104,25 +110,19 @@ header {
 /* Banner Section */
 
 .banner {
-    border: 2px solid blue;
     display: flex;
     justify-content: center;
-    background-color: #ce8d68;
+    background-color: #B4D7EF;
     padding-top: 4rem; /* to remain visible with fixed position header */
 }
 
 /* column1 nb same column structure repeated under orientation, learning and thesis. Minor tweaks */
 
 .banner .column1 {
-    border: 2px solid red;
     flex-direction: column;
     width: 60%;
     flex: auto;
     margin: 2rem 0rem 2rem 1.5rem;
-}
-
-.image-flex {
-  border: 2px solid green;
 }
 
 .image-flex img  {
@@ -135,7 +135,6 @@ header {
 /* Banner column2 */
 
 .banner .column2 {
-    border: 2px solid red;
     flex-direction: column;
     margin: 2rem 1.5rem;
     width: 40%;
@@ -145,7 +144,6 @@ header {
 }
 
 .text {
-    border: 2px solid red;
     margin: 2rem auto;
 }
 
@@ -157,17 +155,21 @@ header {
     display: flex;
     justify-content: center;
     flex-grow: 5;
-    border: 2px solid red;
-    color: snow;
+    color: #ffffff;
     font-size: 1.5rem;
     line-height: normal;
-    background-color: #bf3c20;
-    opacity: 0.5;
+    background-color: #1C6EA8;
     text-align: center;
     padding: 0.5rem;
     border-radius: 0.6rem;
     margin: 2rem auto;
     width: 40%;
+    transition: all 1s ease-out 0.5s;
+}
+
+.start-button:hover {
+  background-color: #010F19;
+  opacity: 0.8;
 }
 
 .text a {
@@ -181,7 +183,6 @@ header {
 }
 
 .orientation {
-    border: 2px solid blue;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -199,7 +200,6 @@ header {
 /* image flex same style banner */
 
 .image-flex {
-    border: 2px solid red;
     width: 100%;
     height: auto;
     display: block;
@@ -208,7 +208,6 @@ header {
 /* text class same style banner */
 
 .text {
-    border: 2px solid red;
     margin: 2rem auto;
 }
 
@@ -232,7 +231,6 @@ header {
 /* Orientation Column 2 */
 
 .orientation .column2 {
-    border: 2px solid green;
     flex-direction: column;
     margin: 2rem 1.5rem;
     width: 40%;
@@ -244,18 +242,16 @@ header {
 /* Sidebar */
 
 .sidebar:last-child {
-    background-color: #ff9f63;
+    background-color: #B4D7EF;
 }
 
 .sidebar {
     display: inline-flex;
-    border: 2px solid red;
     padding-bottom: 1rem;
     align-content: center;
 }
 
 .sidebar-image {
-    border: 2px solid blue;
     max-width: 35%;
     height: auto;
     margin: 1rem;
@@ -278,8 +274,13 @@ header {
 }
 
 .sidebar a {
-    text-decoration: none;
-    color: #c54700;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #3587C1;
+}
+
+.sidebar a:hover {
+  color: #010F19;
 }
 
 /* Learning Section */
@@ -289,8 +290,8 @@ header {
 }
 
 .courses {
-    background-color: #0ca6c8;
-    border: 2px solid red;
+    background-color: #B4D7EF;
+    padding: 1rem 0;
 }
 
 .courses-flex {
@@ -304,19 +305,17 @@ header {
 .courses .column1,
 .courses .column2,
 .courses .column3 {
-    border: 2px solid black;
     flex-direction: column;
     align-content: space-between;
     flex: auto;
     align-items: center;
     max-width: 350px;
-    maz-height: 700px;
+    max-height: 700px;
     }
 
 .course-option {
     align-content: center;
     justify-content: space-between;
-    border: 2px solid #ed27c6;
     background-color: #ffffff;
     width: auto;
     height: 40%;
@@ -343,9 +342,7 @@ header {
 
 /* Thesis Section */
 
-
 .thesis {
-    border: 2px solid blue;
     justify-content: center;
     align-items: center;
     background-color: snow;
@@ -359,14 +356,12 @@ header {
 }
 
 .thesis-flex .column1 {
-    border: 2px solid red;
     flex-direction: column;
     width: 60%;
     margin: 0 1.5rem;
 }
 
 .thesis-flex .column2 {
-    border: 2px solid blue;
     flex-direction: column;
     width: 40%;
 }
@@ -377,15 +372,16 @@ header {
     display: flex;
     margin: auto;
     font-size: 0.8rem;
+    background-color: #B4D7EF;
     justify-content: space-between;
     flex-direction: row;
     padding: 2rem;
-    border-top: 1px solid #c54700;
+    border-top: 1px dotted #010F19;
 }
 
 
 footer span, a {
-    color: silver;
+    color: #0F3651;
     text-decoration: none;
 }
 
@@ -414,13 +410,11 @@ footer span, a {
   justify-content:space-around;
   flex: auto;
   height: 100%;
-  border: 2px solid red;
   }
 
 
   .logo-img  {
   margin: auto 0.5rem;
-  border: 1px solid blue;
   }
 
   .logo-img a img {
@@ -462,10 +456,6 @@ footer span, a {
     display: none;
   }
 
-  .orientation .column2 {
-  margin: 0rem;
-  }
-
   .sidebar {
   flex-direction: column;
   width: 100%;
@@ -475,7 +465,7 @@ footer span, a {
   .sidebar .sidebar-mobile {
   display: block;
   width: auto;
-  height: 100%;
+  margin: 0 auto;
   }
 
   .sidebar img {
@@ -484,7 +474,7 @@ footer span, a {
 
   .sidebar-info {
   width: 90%;
-  margin: auto 1.778rem;
+  margin: auto 1.5rem;
   }
 
 /* Learning Section */
@@ -496,7 +486,7 @@ footer span, a {
     .courses-mobile {
     display: block;
     width: 100%;
-    margin-bottom: 1rem;
+    margin: 0;
     }
 
     .course-option {
@@ -517,7 +507,7 @@ footer span, a {
 
 /* Thesis Section & Footer */
 
-    .thesis h3, p, .column2, .links{
+    .thesis h3, p, .thesis .column2, .links{
     display: none;
     }
 
@@ -530,9 +520,6 @@ footer span, a {
     .thesis video {
     width: 100%;
     }
-
-/* Footer */
-
 
 
 }
