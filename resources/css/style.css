@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.2rem;
 }
@@ -17,14 +17,12 @@ h1 {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1;
-
-
 }
 
 h2 {
   color: #01101B;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2rem;
   text-align: center;
 }
@@ -53,9 +51,10 @@ header {
 }
 
 .logo {
+    font-family: 'Noto Serif', serif;
     display: flex;
     margin: 0 0.75rem; /* maintains 24px margin (1.5*16=24)between logo and left end*/
-    color: #c73c1e;
+    color: #01101B;
     align-items: center;
 }
 
@@ -76,6 +75,7 @@ header {
 /* Menu */
 
 .menu {
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
 }
 
@@ -88,7 +88,7 @@ header {
 
 .navigation-large li {
     flex: auto;
-    line-height: 1.2rem;
+    line-height: 1.3rem;
     margin: 0 1.5rem; /* maintains 24px margin right end*/
     text-align: end;
 }
@@ -154,9 +154,9 @@ header {
 .start-button {
     display: flex;
     justify-content: center;
-    flex-grow: 5;
     color: #ffffff;
     font-size: 1.5rem;
+    font-style: italic;
     line-height: normal;
     background-color: #1C6EA8;
     text-align: center;
@@ -164,12 +164,16 @@ header {
     border-radius: 0.6rem;
     margin: 2rem auto;
     width: 40%;
-    transition: all 1s ease-out 0.5s;
 }
 
 .start-button:hover {
-  background-color: #010F19;
-  opacity: 0.8;
+    background-color: #B4D7EF;
+    padding: 1rem;
+    font-size: 1.75rem;
+    color: #01101B;
+    font-weight: bold;
+    border-radius; 1.5rem;
+    transition: all 1s ease-out 1s;
 }
 
 .text a {
@@ -241,8 +245,9 @@ header {
 
 /* Sidebar */
 
-.sidebar:last-child {
+.sidebar:hover {
     background-color: #B4D7EF;
+    transition: all 1s linear 500ms;
 }
 
 .sidebar {
@@ -497,13 +502,22 @@ footer span, a {
     width: 75%;
     height: 3rem;
     margin: 1rem auto;
-    background-color: silver;
+    background-color: #ffffff;
+    color: #01101B;
     border-radius: 0.6rem;
     }
 
-    .course-option h3 {
-      color: black;
+    .course-option:hover {
+          background-color: #B4D7EF;
+          border-radius: 0.6rem;
+          font-size: 1.5rem;
     }
+
+    .course-option h3:hover {
+      font-size: 1.5rem;
+    }
+
+
 
 /* Thesis Section & Footer */
 
