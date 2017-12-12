@@ -153,23 +153,26 @@ header {
 
 .start-button {
     display: flex;
-    flex: auto;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: baseline;
     color: #ffffff;
     font-size: 1.5rem;
     line-height: normal;
     background-color: #1C6EA8;
     text-align: center;
     margin: 2rem auto;
-    padding: 0.5rem 2rem;
-    border-radius: 0.6rem;
-    width: 40%;
+    padding: 0 0.5rem;
+    border-radius: 1rem;
+    width: 100px;
+    flex-grow: 1;
 }
 
-i {
-  margin-left: 1rem;
-  margin-top: 5px;
+i, .fa .fa-arrow-circle-o-right .fa-lg {
+  margin: 1rem;
+  width: auto;
+  text-align: center;
 }
+
 
 .start-button:hover {
     background-color: #B4D7EF;
